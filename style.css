@@ -3,124 +3,41 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
+    background: black;
 }
-body{
-    background-color: black;
+
+img {
+    width: 10%;
+    filter: invert();
 }
 
 .conteiner {
+    position: absolute;
+    top: 60%;
     width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.content {
+    color: #fff;
+    text-shadow: 0px -5px 10px  #cfcfcf7a;
+    font-size: 2rem;
+    /* border: 2px dotted red; */
+    padding: 1em;
+    font-weight: 800;
     text-align: center;
-}
-.content h1{
-    font-size: 80px;
-    color: #fff;
-}
+    letter-spacing: -.1em;
+    z-index: 1000;
+    line-height: 2em
 
-
-.content p{
-    color: #fff;
-    
+}
+p{
+    font-size: 2rem;
+    font-weight: 600;
 }
 
-.content .social-links, li {
-    display: flex;
-    gap: 40px;
-    text-decoration: none;
-    justify-content: center;
-}
 
-.content .copyright {
-
-    color: white;
-    font-size: 20px;
+.bg-clip {
+    position: absolute;
+    top: 5%;
     width: 100%;
-}
-
-.content .signature {
-    width: 10%;
-}
-
-
-
-
-
-.background-clip {
-    position: fixed;
-    top: 0;
-
     z-index: -1;
 }
 
-@media (min-aspect-ratio:16/9) {
-    .background-clip {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ration:16/9) {
-    .background-clip {
-        width: auto;
-        height: 100%;
-    }
-}
-
-/* Навигационно меню */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    z-index: 10;
-}
-
-.btn {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.btn li {
-    display: inline;
-}
-
-.btn a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn a:hover {
-    background: rgba(255, 255, 255, 0.3);
-}
-
-
-
-
-
-/* Стилове за изображението */
-
-
-#invert {
-    filter: invert();
-    width: 40px;
-}
-
-/* Стилове за социалните линкове */
